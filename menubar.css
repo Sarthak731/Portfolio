@@ -1,0 +1,52 @@
+.menu-icon {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.menu {
+    display: none;
+    position: fixed;
+    top: 160px;
+    left: 160px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    z-index: 1000;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    left: 0;
+}
+
+.menu a:hover {
+    color: #ff69b4; /* Hot pink color on hover */
+    transform: translateX(10px); /* Move 10px to the right on hover */
+}
+
+.menu a.active {
+    color: #ff69b4; /* Hot pink color for active link */
+}
+
+.menu-icon {
+    transition: transform 0.3s ease;
+}
+.menu-icon.open {
+    transform: rotate(90deg);
+}

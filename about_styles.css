@@ -1,0 +1,153 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #fff;
+}
+
+/* About section */
+#about {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.section-title {
+    font-size: 24px;
+    text-align: center;
+    color: #e91e63;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
+.about-text {
+    flex: 1;
+    color: #fff;
+}
+
+.education-skills {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.education, .skills {
+    width: 48%;
+}
+
+.education h4, .skills h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.education ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.education li {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.skill-item {
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+}
+
+.skill-bar {
+    background-color: #f0f0f0;
+    height: 10px;
+    margin: 5px 0;
+    position: relative;
+}
+
+.skill-level {
+    background-color: #333;
+    height: 100%;
+    position: absolute;
+}
+
+.skill-percentage {
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+    font-size: 12px;
+    background-color: #333;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.cta-buttons {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline {
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.btn-filled {
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #fff;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-picture {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .profile-skills {
+        flex-direction: column;
+    }
+
+    .profile, .skills {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
